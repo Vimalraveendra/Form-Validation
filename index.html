@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
+    <form action="" id='form' autocomplete="off" method="GET">
         <h1>Registration</h1>
          <table>
              <tr>
                         <td>Name</td>
-                        <td><input type='text' name="name" /></td>
+                        <td><input type='text' name="name" autocomplete="off"/></td>
              </tr>
              <tr>
                         <td> Email</td>
-                        <td><input type="email" name="email"/></td>
+                        <td><input type="email" name="email" min="10" max="20" id="email"/></td>
              </tr>
              <tr>
                         <td>Phone Number</td>
-                        <td><input type="number" name="phone"></td>
+                        <td><input type="number" name="phone" id="phone"></td>
              </tr>
 
              <tr>
@@ -36,7 +36,9 @@
                          </td>
              </tr>
          </table>
-       <div class="btn-submit"><input type="button" value="Submit"></div>
+         <p id="demo" style="color:red; text-align:center"></p>
+       <div class="btn-submit"><input type="submit" value="Submit" id='submit'></div>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
