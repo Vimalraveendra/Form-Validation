@@ -1,15 +1,35 @@
 :root {
   --blue: #0d6efd;
   --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #d63384;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #198754;
-  --teal: #20c997;
+  --light-grey:: #e9e9e9;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light-grey);
+}
+
+h1 {
+  text-align: center;
+}
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select{
+    width: 100%;
+    height: 22px;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-submit input{
+   
+    margin-top: 20px;
 }
